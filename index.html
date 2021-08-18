@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-assets>
+            <a-asset-item id='street-model' src='./models/street/scene.gltf' ></a-asset-item>
+            <a-asset-item id='woman-model' src='./models/woman/scene.gltf' ></a-asset-item>
+            <a-asset-item id='cat-model' src='./models/cat/scene.gltf' ></a-asset-item>
+        </a-assets>
+
+        <a-scene background='color:black'>
+            <a-camera position='0 8 -10'></a-camera> 
+
+            <a-entity>
+                <!-- Street -->
+                <a-entity id='street' gltf-model='#street-model' position='-150 -95 -200' rotation='0 -10000 0' scale='0.5 0.5 0.5'>
+                </a-entity>
+            </a-entity>
+
+            <a-entity>
+                <!-- Woman -->
+                <a-enity id='woman' gltf-model='#woman-model' position='-150 -80 20' rotation='0 0 0' scale='0.5 0.5 0.5'></a-enity>
+            </a-entity>
+        </a-scene>
+    </body>
+</html>
